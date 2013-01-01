@@ -31,17 +31,16 @@ modules are loaded asynchronously over the network.
 Anchor presents a consistent API throughout the core modules.  The idioms found
 in the API are (not coincidentally) the same idioms popularized by Node.js and
 widely adopted by the community.  Events are emitted to delegate processing to
-higher-level constructs.  Error objects are passed as the first argument to
-asyncronous callbacks.  Adopting these conventions encourages the use of a
-single, unified programming style for both client-side and server-side
-development.
+higher layers.  Error objects are passed as the first argument to asyncronous
+callbacks.  Adopting these conventions encourages the use of a single, unified
+programming style for both client-side and server-side development.
 
 Via [JSMT](https://github.com/jaredhanson/jsmt), Anchor also supports module
-translation from Node/[CommonJS](http://www.commonjs.org/) to AMD, with core
-modules providing a portability layer.  This provides near-seamless source code
-level compatibility for using modules in both client-side and server-side
-environments.  Adopting a single language across the stack increases productivity
-and reduces development time.
+translation from [CommonJS](http://www.commonjs.org/) to AMD, with Anchor's
+core modules conforming to the interfaces exported by Node's core modules.  This
+provides near-seamless source code level compatibility for using modules in both
+client-side and server-side environments.  Adopting a single language across the
+stack increases productivity and reduces development time.
 
 These techniques combine to make Anchor a solid foundation on which to
 effectively and quickly build web applications.
